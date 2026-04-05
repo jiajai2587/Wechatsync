@@ -1,39 +1,48 @@
-node_modules
-dist
-.turbo
+```
+# Dependencies
+node_modules/
+
+# Build artifacts
+dist/
+build/
+target/
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+env/
+venv/
+.venv/
+.ENV
+.python-version
+
+# Logs
 *.log
+
+# OS generated files
 .DS_Store
-*.local
-.env
-.env.*
-!.env.example
-coverage
-*.zip
+Thumbs.db
 
-# IDE
-.vscode/*
-!.vscode/extensions.json
+# Editor
+.vscode/
 .idea/
-*.iml
+*.swp
+*.swo
 
-# TypeScript compiled files
-packages/*/src/**/*.js
-packages/*/src/**/*.js.map
-packages/*/src/**/*.d.ts
-packages/*/src/**/*.d.ts.map
-*.tsbuildinfo
+# Environment variables
+.env
+.env.local
+*.env.*
 
-# Keep reader library files
-!packages/extension/src/lib/reader/reader.js
-!packages/extension/src/lib/reader/Readability.js
+# Coverage
+coverage/
+htmlcov/
+.coverage
 
-# Lock files (use pnpm)
-package-lock.json
-yarn-error.log
-CLAUDE.md
-
-# Private adapters (not open source)
-packages/core/src/adapters/platforms/xiaohongshu.ts
-packages/core/src/adapters/platforms/x.ts
-packages/core/src/content/
-packages/extension/src/content/xiaohongshu.ts
+# Testing
+.pytest_cache/
+.mypy_cache/
+```
