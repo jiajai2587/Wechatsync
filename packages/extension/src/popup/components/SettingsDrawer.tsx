@@ -288,6 +288,11 @@ export function SettingsDrawer({ open, onClose }: SettingsDrawerProps) {
               <p>支持 20+ 平台一键同步</p>
             </div>
 
+            <div className="space-y-1">
+              <p className="text-xs">邮箱：27428938881@qq.com</p>
+              <p className="text-xs">微信：xiaoqi19860607</p>
+            </div>
+
             <a
               href="https://github.com/wechatsync/Wechatsync"
               target="_blank"
@@ -299,20 +304,6 @@ export function SettingsDrawer({ open, onClose }: SettingsDrawerProps) {
               GitHub 开源
             </a>
           </div>
-        </div>
-
-        {/* 底部固定 - 问题反馈 */}
-        <div className="absolute bottom-0 left-0 right-0 p-4 border-t bg-background">
-          <a
-            href="https://txc.qq.com/products/105772"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="flex items-center justify-center gap-2 w-full py-2 px-4 bg-primary/10 hover:bg-primary/20 text-primary rounded-lg text-sm font-medium transition-colors"
-            onClick={() => trackHelpSeeking('feedback_click').catch(() => {})}
-          >
-            <ExternalLink className="w-4 h-4" />
-            问题反馈
-          </a>
         </div>
       </div>
     </>
